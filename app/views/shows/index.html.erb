@@ -12,8 +12,6 @@
       <th><%= model_class.human_attribute_name(:capacity) %></th>
       <th><%= model_class.human_attribute_name(:price) %></th>
       <th><%= model_class.human_attribute_name(:image) %></th>
-      <th><%= model_class.human_attribute_name(:date) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -27,8 +25,6 @@
         <td><%= show.capacity %></td>
         <td><%= show.price %></td>
         <td><%= show.image %></td>
-        <td><%= show.date %></td>
-        <td><%=l show.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_show_path(show), :class => 'btn btn-default btn-xs' %>
