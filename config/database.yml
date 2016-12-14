@@ -23,6 +23,7 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-production:
-  <<: *default
-  database: db/production.sqlite3
+# Heroku se charge de la production parait il
+# production:
+#   <<: *default
+#   database: db/production.sqlite3
